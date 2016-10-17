@@ -1,5 +1,9 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
+        <file>capslk_off.png</file>
+        <file>capslk_on.png</file>
+        <file>numlk_off.png</file>
+        <file>numlk_on.png</file>
     </qresource>
 </RCC>

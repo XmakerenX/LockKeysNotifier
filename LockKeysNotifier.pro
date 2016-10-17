@@ -1,9 +1,10 @@
 TEMPLATE = app
 
-QT += qml quick
+QT += qml quick x11extras widgets gui
 CONFIG += c++11
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    myeventfilter.cpp
 
 RESOURCES += qml.qrc
 
@@ -14,3 +15,8 @@ QML_IMPORT_PATH =
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+HEADERS += \
+    myeventfilter.h
+
+LIBS += -lX11 -lXext
