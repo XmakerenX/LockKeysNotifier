@@ -3,12 +3,13 @@ import QtQuick.Window 2.2
 
 Window {
     id: mainWindow
-    x: Screen.width - 193
+    x: Screen.width / 2 - 162
     y: Screen.height - 180
     visible: true
-    width: 193
+    width: 325
     height: 60
     color: "#00000000"
+    property alias numlockOff: numlockOff
     property alias capsOn: capsOn
     opacity: 1
     title: qsTr("Keylcok Indicator")
@@ -42,7 +43,7 @@ Window {
 
     Image {
         id: numlockOff
-        x: 128
+        x: 260
         y: 0
         width: 65
         height: 60
@@ -54,7 +55,7 @@ Window {
 
     Image {
         id: numlockOn
-        x: 128
+        x: 260
         y: 0
         width: 65
         height: 60
